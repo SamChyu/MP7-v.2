@@ -63,7 +63,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                return;
+                LatLng me = new LatLng(40.116, -88.2073);
+                poiMarkers.add(mMap.addMarker(new MarkerOptions().position(me).title("YOU ARE HERE")));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(me, 15));
+
             }
         });
 
