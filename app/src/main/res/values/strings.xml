@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">mapExperimentation</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="bus_stops">Bus Stops</string>
+    <string name="show_bus_stops">Show Bus Stops</string>
+    <string name="hide_bus_stops">Hide Bus Stops</string>
+    <string name="update_location">Update Location</string>
+    <string name="poi">POI</string>
+    <string name="show_poi">Show POI</string>
+    <string name="location">location</string>
+</resources>
