@@ -19,6 +19,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -227,7 +228,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             double lat = Double.valueOf(aStopData[1]);
             double lon = Double.valueOf(aStopData[2]);
             LatLng individualLatLng = new LatLng(lat, lon);
-            stopMarkers.add(mMap.addMarker(new MarkerOptions().position(individualLatLng).title(aStopData[0]).snippet(aStopData[3]).visible(false)));
+            stopMarkers.add(mMap.addMarker(new MarkerOptions().position(individualLatLng).title(aStopData[0]).snippet(aStopData[3]).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)).visible(false)));
         }
     }
     void createPOIMarkers(){
