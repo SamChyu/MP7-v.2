@@ -21,8 +21,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:gravity="bottom"
-        android:orientation="horizontal"
-        android:layout_alignParentLeft="true">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/yourLocation"
@@ -31,7 +30,20 @@
             android:layout_weight="1"
             android:text="@string/location"
             android:textAppearance="@android:style/TextAppearance.Material.Small"
-            tools:ignore="RtlCompat" tools:targetApi="lollipop"/>
+            android:visibility="gone"
+            tools:ignore="RtlCompat"
+            tools:targetApi="lollipop" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="?attr/colorButtonNormal"
+            android:theme="?attr/actionButtonStyle" />
 
         <ToggleButton
             android:id="@+id/toggleButton"

@@ -8,4 +8,11 @@
     <string name="poi">POI</string>
     <string name="show_poi">Show POI</string>
     <string name="location">location</string>
+
+    <string-array name="mapTypes">
+        <item>Standard</item>
+        <item>Satellite</item>
+        <item>Hybrid</item>
+
+    </string-array>
 </resources>
